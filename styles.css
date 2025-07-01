@@ -7,12 +7,12 @@
 
 }
 
-* {
-    background-color: #eee;
+body {
+    margin: 0;
 }
 
 img {
-    height: 7rem;
+    height: 6rem;
 }
 
 .italicize {
@@ -21,15 +21,20 @@ img {
 
 .whole-site-container {
     display: flex;
+    height: 100vh;
 }
 
 .left-side {
     width: 40%;
+    background-color: #eee;
     /* background-image: url("./imgs/background-side.jpg"); */
 }
 
 .right-side {
     width: 60%;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
 }
 
 .viking {
@@ -38,5 +43,55 @@ img {
 }
 
 .img-background {
-    display: flex;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.196);
+}
+
+.main-form {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: .5rem;
+}
+
+.left-form {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.right-form {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.form-div {
+    background-color: white;
+    /* box-shadow: 10px 5px 5px black; */
+}
+
+.whole-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.log-in {
+    margin-top: 1.7rem;
+}
+
+.submit-button {
+    margin-top: 1rem;
+}
+
+.submit-form {
+    background-color: #eee;
 }
