@@ -40,8 +40,10 @@ img {
 
 .viking {
     font-family: "nordic-bold";
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: white;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .img-background {
