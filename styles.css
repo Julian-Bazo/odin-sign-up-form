@@ -25,13 +25,18 @@ img {
 }
 
 .left-side {
-    width: 40%;
+    width: 30%;
     background-color: #eee;
-    /* background-image: url("./imgs/background-side.jpg"); */
+    background-image: url("./imgs/background-side.jpg");
+    background-size: cover;
+}
+
+.top-p {
+    font-size: 1.2rem;
 }
 
 .right-side {
-    width: 60%;
+    width: 70%;
     background-color: #eee;
     display: flex;
     flex-direction: column;
@@ -40,31 +45,39 @@ img {
 .viking {
     font-family: "nordic-bold";
     font-size: 4rem;
+    color: white;
 }
 
 .img-background {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.196);
+    background-color: rgba(0, 0, 0, 0.451);
+    margin-top: 8rem;
+}
+
+.wrap-p {
+    width: 50ch;
 }
 
 .main-form {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     margin-bottom: .5rem;
+    padding-left: 2rem;
+    /* justify-content: center; */
 }
 
 .left-form {
     display: flex;
     flex-direction: column;
-    gap: .2rem;
+    gap: .9rem;
 }
 
 .right-form {
     display: flex;
     flex-direction: column;
-    gap: .2rem;
+    gap: .9rem;
 }
 
 .form-element {
@@ -85,13 +98,38 @@ img {
 }
 
 .log-in {
-    margin-top: 1.7rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
 }
 
 .submit-button {
     margin-top: 1rem;
+    margin-left: 2rem;
+    background-color: #7ca060;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: .4rem 1.8rem;
 }
 
 .submit-form {
     background-color: #eee;
+}
+
+.form-div>p {
+    padding-left: 2rem;
+    font-size: 1.2rem;
+}
+
+p {
+    padding-left: 2rem;
+}
+
+.green {
+    color: #7ca060;
+}
+
+label {
+    font-size: .7rem;
+    font-family:'Times New Roman', Times, serif
 }
