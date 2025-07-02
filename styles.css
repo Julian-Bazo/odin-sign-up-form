@@ -31,10 +31,6 @@ img {
     background-size: cover;
 }
 
-.top-p {
-    font-size: 1.2rem;
-}
-
 .right-side {
     width: 70%;
     background-color: #eee;
@@ -58,14 +54,25 @@ img {
 
 .wrap-p {
     width: 50ch;
+    margin-top: 5rem;
+}
+
+.top-p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.top>p+p {
+    margin-bottom: 2.5rem;
 }
 
 .main-form {
     display: flex;
     gap: 3rem;
-    margin-bottom: .5rem;
+    padding-bottom: 1.5rem;
     padding-left: 2rem;
-    /* justify-content: center; */
+    z-index: 1;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.396);
 }
 
 .left-form {
@@ -73,6 +80,10 @@ img {
     flex-direction: column;
     gap: .9rem;
 }
+
+/* .shadow-div {
+    box-shadow: 2px 600px 100px black;
+} */
 
 .right-form {
     display: flex;
@@ -88,13 +99,12 @@ img {
 
 .form-div {
     background-color: white;
-    /* box-shadow: 10px 5px 5px black; */
 }
 
 .whole-form {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0rem;
 }
 
 .log-in {
@@ -103,13 +113,14 @@ img {
 }
 
 .submit-button {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-left: 2rem;
     background-color: #7ca060;
     color: white;
     font-size: 1rem;
     border-radius: 5px;
     padding: .4rem 1.8rem;
+    cursor: pointer;
 }
 
 .submit-form {
@@ -127,9 +138,26 @@ p {
 
 .green {
     color: #7ca060;
+    cursor: pointer;
 }
 
 label {
     font-size: .7rem;
     font-family:'Times New Roman', Times, serif
+}
+
+input:valid {
+    border-color: #7ca060;
+}
+
+input:invalid {
+    border-color: rgb(255, 160, 160);
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  border: 2px solid black;
 }

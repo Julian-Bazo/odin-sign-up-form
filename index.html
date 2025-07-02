@@ -32,33 +32,35 @@
                     <div class="main-form">
                         <div class="left-form">
                             <div class="first-name-div form-element">
-                                <label for="first-name">FIRST NAME</label>
-                                <input type="text" name="first-name" id="first-name">
+                                <label for="first-name">FIRST NAME<span aria-required="true">*</span></label>
+                                <input type="text" name="first-name" id="first-name" tabindex="1" required autofocus placeholder="John">
                             </div>
                             <div class="email-div form-element">
-                                <label for="email">EMAIL</label>
-                                <input type="email" name="email" id="email">
+                                <label for="email">EMAIL<span aria-required="true">*</span></label>
+                                <input type="email" name="email" id="email" tabindex="3" required placeholder="you@example.com">
                             </div>
                             <div class="password-di form-element">
-                                <label for="password">PASSWORD</label>
-                                <input type="password" name=" " id="password">
+                                <label for="password">PASSWORD<span aria-required="true">*</span></label>
+                                <input type="password" name=" " id="password" tabindex="5" required>
                             </div>
                         </div>
                         <div class="right-form">
                             <div class="last-name-div form-element">
-                                <label for="last-name">LAST NAME</label>
-                                <input type="text" name="last-name" id="last-name">
+                                <label for="last-name">LAST NAME<span aria-required="true">*</span></label>
+                                <input type="text" name="last-name" id="last-name" tabindex="2" required placeholder="Smith">
                             </div>
                             <div class="phone-number-div form-element">
-                                <label for="phone-number">PHONE NUMBER</label>
-                                <input type="tel" name="phone-number" id="phone-number">
+                                <label for="phone-number">PHONE NUMBER<span aria-required="true">*</span></label>
+                                <input type="tel" name="phone-number" id="phone-number" tabindex="4" required>
                             </div>
                             <div class="confirm-password-div form-element">
-                                <label for="confirm-password">CONFIRM PASSWORD</label>
-                                <input type="password" name="password" id="confirm-password">
+                                <label for="confirm-password">CONFIRM PASSWORD<span aria-required="true">*</span></label>
+                                <input type="password" name="password" id="confirm-password" tabindex="6" required>
                             </div>
                         </div>
                     </div>
+
+                    <!-- <span class="shadow-div"></span> -->
                     
                     <div class="submit-form">
                         <button class="submit-button" type="submit">Create Account</button>
